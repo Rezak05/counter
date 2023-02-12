@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Counter</h1>
+    <p> Click Counter online, Click ' + ' button or space to count</p>
+    <form id="gen"></form>
+    <div class="row"></div>
+    <input type="number" step="any" value="0" id="count" class="form-control from-control-lg" autofocus>
+    <button type="button" id="resetbtn" title="reset" onclick="count.value=0;" class="btn btn-outline-secondary">x</button> 
+ <div class="input-group-append"></div>
+    <button type="button" id="addbtn" onclick="onAdd()" class="btn btn-lg btn-block btn-success">+</button> 
+<div class="form-group mt-4"></div>
+<button type="button" id="subbtn" onclick="onRemove()" class="btn btn-lg btn-block btn-secondary">-</button>
+
+</body>
+</html>
+
+<script>
+    function onAdd(){
+        var Counter=document.getElementById("count").value;
+        var hasil= parseInt(Counter)+1;
+        document.getElementById("count").value=hasil;
+    }
+    function onRemove(){
+        var kalkulasi=document.getElementById("count").value;
+        var hasil=parseInt(kalkulasi)-1;
+        document.getElementById("count").value=hasil;
+    }
+</script>
